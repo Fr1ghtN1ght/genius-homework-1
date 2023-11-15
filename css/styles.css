@@ -1,0 +1,101 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/play-v19-cyrillic_cyrillic-ext_latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Play';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/play-v19-cyrillic_cyrillic-ext_latin-700.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-v30-cyrillic_cyrillic-ext_latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap; 
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/roboto-v30-cyrillic_cyrillic-ext_latin-700.woff2') format('woff2');
+}
+
+
+:root {
+    --color-primary-light: #2B7FFF;
+    --color-primaty-dark: #011C44;
+}
+
+/* Base */
+body {
+    color: var(--color-primary-dark);
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Button */
+.button {
+    color: white;
+    background-color: var(--color-primary-light);
+    border-radius: 32px;
+    border: 2px solid var(--color-primary-light);
+    cursor: pointer;
+}
+.button:hover {
+    background-color: transparent;
+    color: var(--color-primary-dark);
+}
+
+/* Links */
+.link-header {
+    color: var(--color-primary-dark);
+    text-decoration: none;
+}
+
+.link-footer {
+    color: var(--color-primary-light);
+    text-decoration: none;
+}
+
+/* Hero section */
+.hero-title {
+    color: var(--color-primary-light);
+    font-family: 'Play', sans-serif;
+    text-transform: capitalize;
+    font-size: 140px;
+    line-height: 0.8
+    
+}
+
+/* Description section */
+.section-title {
+    font-family: 'Play', sans-serif;
+    font-size: 64px;
+}
+
+.section-title .accent {
+    color: var(--color-primary-light);
+}
+
+#cap {
+    text-transform: capitalize;
+}
+
+.descr-text .brand {
+    color: var(--color-primaty-dark);
+    font-weight: 600;
+    text-transform: capitalize;
+}
