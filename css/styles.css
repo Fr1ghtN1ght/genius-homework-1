@@ -33,13 +33,17 @@
 
 :root {
     --color-primary-light: #2B7FFF;
-    --color-primaty-dark: #011C44;
+    --color-primary-dark: #011C44;
+    --color-secondary-light: #747272;
+    --color-secondary-dark: #4A4A4A;
+    --color-contrasting: #FFFFFF;
 }
 
 /* Base */
 body {
     color: var(--color-primary-dark);
     font-family: 'Roboto', sans-serif;
+    font-weight: 400;
 }
 
 ul {
@@ -49,10 +53,14 @@ ul {
 /* Button */
 .button {
     color: white;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.17;
     background-color: var(--color-primary-light);
     border-radius: 32px;
     border: 2px solid var(--color-primary-light);
     cursor: pointer;
+    padding: 16px 32px;
 }
 .button:hover {
     background-color: transparent;
@@ -63,27 +71,51 @@ ul {
 .link-header {
     color: var(--color-primary-dark);
     text-decoration: none;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.17;
+}
+
+.accent .link-header {
+    color: var(--color-primary-light);
+    font-weight: 700;
 }
 
 .link-footer {
-    color: var(--color-primary-light);
+    color: var(--color-contrasting);
     text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
 }
 
 /* Hero section */
+.hero-section {
+    font-weight: 400;
+    line-height: 1.17;
+}
+
+.hero-text {
+    color: var(--color-secondary-dark);
+    font-size: 12px;
+    line-height: 1.5;
+}
+
 .hero-title {
     color: var(--color-primary-light);
     font-family: 'Play', sans-serif;
     text-transform: capitalize;
+    font-weight: 700;
     font-size: 140px;
     line-height: 0.8
-    
 }
 
 /* Description section */
 .section-title {
     font-family: 'Play', sans-serif;
+    font-weight: 700;
     font-size: 64px;
+    line-height: 1.15;
 }
 
 .section-title .accent {
@@ -94,8 +126,34 @@ ul {
     text-transform: capitalize;
 }
 
+.descr-text {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.7;
+}
+
 .descr-text .brand {
-    color: var(--color-primaty-dark);
+    color: var(--color-primary-dark);
     font-weight: 600;
     text-transform: capitalize;
+}
+
+/* Contacts section */
+.contacts-section {
+    color: var(--color-primary-dark);
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 1.17;
+}
+
+.contacts-text .accent {
+    color: var(--color-primary-light);
+}
+
+/* Footer */
+.copyright {
+    font-style: normal;
+    color: var(--color-secondary-light);
+    font-size: 13px;
+    line-height: 1.17;
 }
